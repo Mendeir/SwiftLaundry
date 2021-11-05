@@ -8,7 +8,7 @@
 
 	<title> Swift Laundry </title>
 
-	<link rel="stylesheet" href="css/StyleLoginPage.css" />
+	<link rel="stylesheet" href="StyleLoginPage.css" />
 	
 </head>
 
@@ -27,7 +27,6 @@
 				<input type="password" placeholder="Enter your password" name="pword" required>
 				<br>
 				<button type="submit"> Login </button>
-				<p class="register"><a href="">Register</a></p>
 			</div>
 		</form>
 
