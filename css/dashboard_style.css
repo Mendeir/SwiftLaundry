@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Verdana", sans-serif;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    background: #03045E;
+    padding: 20px;
+    width: calc(100% - 0%);
+    top: 0;
+    height: 30px;
+}
+
+.brand-name h3 {
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.logout-area span {
+    float: right;
+    margin-top: -20px;
+    margin-right: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;    
+}
+
+.logout-button {
+    float: right;
+    padding: 10px;
+    background: #0077B6;
+    text-decoration: none;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;    
+}
+
+.logout-button:hover {
+    background: black;
+}
+
+nav {
+    z-index: 1;
+    top: 0;
+    background: #023E8A;
+    margin-top: 70px;
+    padding-top: 70px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: calc(100% - 9%);
+    
+}
+
+nav a {
+    color: #fff;
+    display: block;
+    align-items: right;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+nav a:hover {
+    background: #0077B6;
+}
+
+nav i {
+    padding-right: 10px;
+}
+
+section {
+    width:  (100% - 250px);
+    margin-top: 60px;
+    padding: 20px;
+    margin-left: 250px;
+    background-color: rgb(236, 236, 236);
+    height: 100vh;
+    color: black;
+    padding-top: 50px;
+}
+
+section .content {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    height: 80vh;
+    border-radius: 5px;
+}
