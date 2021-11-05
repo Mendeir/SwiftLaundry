@@ -15,6 +15,7 @@
         </div>
         <div class="logout-area">
             <a href="#" class="logout-button">Logout</a>
+            <span>USER</span>
         </div>
     </header>
 
@@ -26,6 +27,10 @@
             <a href="#"><i class="fas fa-clipboard-list"></i><span>Reports</span></a>
     </nav>
 
-
+    <section>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odio rem officia iste velit adipisci hic incidunt libero minus? Recusandae praesentium cum rem, placeat atque dolore dignissimos a laboriosam consequatur?</p>
+        </div>
+    </section>
 </body>
 </html>
