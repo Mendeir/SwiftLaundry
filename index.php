@@ -27,7 +27,7 @@
 				<input type="password" placeholder="Enter your password" name="pword" required>
 				<br>
 				<button type="submit"> Login </button>
-				<p class="register"><a href="">Register</a></p>
+				<p class="register"><a href="register_form.php">Register</a></p>
 			</div>
 		</form>
 

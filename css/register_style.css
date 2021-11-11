@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background-image: url("register_background.jpg");
+    background-image: url("../img/register_background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
