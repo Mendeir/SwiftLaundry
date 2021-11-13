@@ -110,7 +110,7 @@ section .content header {
 }
  
 .section-name {
-    color: black;
+    color: #03045E;
     margin-top: -16px;
     margin-left: 10px;
     text-transform: uppercase;
@@ -129,6 +129,10 @@ section .content header {
     font-size: 15px;
     font-weight: 600;
     color: #fff;   
+}
+
+.add-item-button:hover {
+    background: #023E8A;
 }
 
 section .content-items {
