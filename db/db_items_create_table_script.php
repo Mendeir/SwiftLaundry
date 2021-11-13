@@ -17,4 +17,5 @@ $sql_command = "CREATE TABLE items
         echo "Error creating table: ".$connection->error;
     }
 
+    $connection->close();
 ?>
