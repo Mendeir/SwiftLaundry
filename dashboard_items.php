@@ -9,7 +9,7 @@
     <title>Swift Laundry</title>
 </head>
 <body>
-   <?php include_once("header.inc") ?>
+   <?php include_once("inc/header.inc") ?>
 
     <section>
         <div class="content">
