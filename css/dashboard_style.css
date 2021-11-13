@@ -148,7 +148,7 @@ section .content-items {
 
 .item-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px
 }
@@ -164,7 +164,7 @@ section .content-items {
 .card img {
     max-width: 100%;
     border-radius: 5px;
-    height: 250px;
+    height: 150px;
 }
 
 .card .price {
