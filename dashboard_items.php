@@ -25,9 +25,28 @@
             
             <div class="content-items">
                 <div class="item-container">
-                    <div class="card">
+                    <?php 
+                        include_once("db/db_SwiftLaundry_connection_script.php");
+                        
+                        if ($connection->connect_error) {
+                            die("Connection failed: ".$connection->connect_error);
+                        }
+                        $sql_command = "SELECT item_name, price, image_path FROM items";
+                        $result = $connection->query($sql_command);
+
+                        if ($result-> num_rows > 0) {
+                            while($row = $result-> fetch_assoc()) {
+                                echo '<div class="card">';
+                                    echo '<div class="product-name">'.$row["item_name"]."</div>";
+                                    echo ' <div class="image"><img src="'.$row["image_path"].'" alt="Item"></div>';
+                                    echo '<div class="price">'.$row["price"]."</div>";
+                                echo "</div>";
+                            }
+                        }
+                    ?>
+                    <!--div class="card">
                         <div class="product-name">Test 1</div>
-                        <div class="image"><img src="img/items/test.jpg" alt="Item"></div>
+                        
                         <div class="price">Php 1000</div>
                     </div>
 
@@ -89,7 +108,7 @@
                         <div class="product-name">Test 1</div>
                         <div class="image"><img src="img/items/test.jpg" alt="Item"></div>
                         <div class="price">Php 1000</div>
-                    </div>
+                    </div-->
                 </div>
             </div>
 
