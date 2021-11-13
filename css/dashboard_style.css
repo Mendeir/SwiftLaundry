@@ -101,4 +101,5 @@ section .content {
     font-size: 14px;
     height: 80vh;
     border-radius: 5px;
+    overflow: auto;
 }
