@@ -29,7 +29,19 @@
 
     <section>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odio rem officia iste velit adipisci hic incidunt libero minus? Recusandae praesentium cum rem, placeat atque dolore dignissimos a laboriosam consequatur?</p>
+            <div class="content-header">
+                <div class="section-name">
+                    <h3>ITEMS</h3>
+                </div>
+                <div class="add-item">
+                    <a href="#" class="add-item-button">Add Item +</a>
+                </div>
+
+            </div>
+            
+            <div class="content-items">
+                
+            </div>
         </div>
     </section>
 </body>

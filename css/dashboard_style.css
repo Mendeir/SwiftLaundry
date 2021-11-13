@@ -18,7 +18,7 @@ header {
     color: #fff;
     margin: 0;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: 900;
 }
 
@@ -26,7 +26,7 @@ header {
     float: right;
     margin-top: -20px;
     margin-right: 40px;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 600;
     color: #fff;    
 }
@@ -39,13 +39,13 @@ header {
     margin-top: -30px;
     margin-right: 40px;
     border-radius: 2px;
-    font-size: 15px;
+    font-size: 0.9rem;
     font-weight: 600;
     color: #fff;    
 }
 
 .logout-button:hover {
-    background: black;
+    background: #023E8A;
 }
 
 nav {
@@ -87,17 +87,54 @@ section {
     margin-top: 60px;
     padding: 20px;
     margin-left: 250px;
-    background-color: rgb(236, 236, 236);
-    height: 100vh;
+    background-image: url("../img/background/dashboard_background.png");
+    height: 86vh;  
     color: black;
     padding-top: 50px;
 }
 
 section .content {
     background: #fff;
+    opacity: 0.8;
     padding: 15px;
     margin-bottom: 10px;
     font-size: 14px;
     height: 80vh;
     border-radius: 5px;
+    overflow: auto;
+}
+
+section .content header {
+    display: inline-block;
+    width: 100%;
+}
+ 
+.section-name {
+    color: #03045E;
+    margin-top: -16px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 900;
+    float: left;
+}
+
+.add-item-button {
+    float: right;
+    padding: 10px;
+    background: #0077B6;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;   
+}
+
+.add-item-button:hover {
+    background: #023E8A;
+}
+
+section .content-items {
+    clear:both;
 }
