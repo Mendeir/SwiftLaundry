@@ -45,7 +45,7 @@ header {
 }
 
 .logout-button:hover {
-    background: black;
+    background: #023E8A;
 }
 
 nav {
@@ -87,14 +87,15 @@ section {
     margin-top: 60px;
     padding: 20px;
     margin-left: 250px;
-    background-color: rgb(236, 236, 236);
-    height: 100vh;
+    background-image: url("../img/background/dashboard_background.png");
+    height: 86vh;  
     color: black;
     padding-top: 50px;
 }
 
 section .content {
     background: #fff;
+    opacity: 0.8;
     padding: 15px;
     margin-bottom: 10px;
     font-size: 14px;
