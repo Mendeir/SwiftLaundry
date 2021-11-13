@@ -138,3 +138,37 @@ section .content header {
 section .content-items {
     clear:both;
 }
+
+.content-items .card {
+    background-color: #ADE8F4;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px
+}
+
+.card .product-name{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 5px;
+    margin-bottom: 10px;
+    color: #023E8A;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+    height: 250px;
+}
+
+.card .price {
+    margin: 5px;
+    font-weight: bold;
+    color: #023E8A;
+}
