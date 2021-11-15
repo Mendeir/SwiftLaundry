@@ -21,11 +21,11 @@
                     <input type="text" id="item-name" name="item-name" required>
 
                     <label for="price"> Price (Php): </label>
-                    <input type="number" id="price" name="price" min="0.00" max="10000.00" step="5" required>
+                    <input type="number" id="price" name="price" min="0.00" max="10000.00" required>
 
                     <label for="image-path"> Image Path: </label>
                     <input type="file" id="image-path" name="image-path" accept="image/png, image/jpeg" required>
-                    
+
                     <input type="submit" id="add-item-button" name="submit" value="Add Item">
                 </form>
             </div>
