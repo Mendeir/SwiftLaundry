@@ -16,7 +16,7 @@
                 </div>
 
             <div class="content-items">
-                <form action="dashboard_items.php" class="add-item-form">
+                <form action="db/insert_items_script.php" class="add-item-form" method="POST">
                     <label for="item-name"> Item Name: </label>
                     <input type="text" id="item-name" name="item-name" required>
 

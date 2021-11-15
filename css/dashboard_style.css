@@ -214,3 +214,9 @@ section .content-items {
 #add-item-button:hover {
     background: #023E8A;
 }
+
+.message-prompt {
+    margin-top: 15%;
+    text-align: center;
+    color: #03045E;
+}
