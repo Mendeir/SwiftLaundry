@@ -13,7 +13,7 @@
                     <h3>ITEMS</h3>
                 </div>
                 <div class="add-item">
-                    <a href="#" class="add-item-button">Add Item +</a>
+                    <a href="add_item.php" class="add-item-button">Add Item +</a>
                 </div>
 
             </div>
