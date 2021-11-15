@@ -172,3 +172,45 @@ section .content-items {
     font-weight: bold;
     color: #023E8A;
 }
+
+.add-item-form {
+    margin: 2rem auto;
+    max-width: 25%;
+    background-color: #90E0EF;
+    margin: 2rem auto;
+    border: 2px solid;
+    padding: 2rem;
+  }
+  
+.add-item-form label {
+    display: block;
+    padding: 1rem 0 .25rem;
+    text-transform: capitalize;
+    color: #03045E;
+    font-weight: bold;
+}
+  
+.add-item-form input {
+    display: block;
+    width: 100%;
+    border: 2px solid;
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+  
+#add-item-button {
+    border: 0;
+    background: #0077B6;
+    padding: .5rem;
+    color: #FFF;
+    margin: 1rem auto;
+    width: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#add-item-button:hover {
+    background: #023E8A;
+}
