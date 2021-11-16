@@ -1,0 +1,20 @@
+.row1{
+	height: 250px;
+	background-color: powderblue;
+}
+
+.container{
+	width: 1000px;
+	height: 150px;
+	margin: 0 auto;
+}
+
+.col{
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+	float: left;
+	padding: 5px;
+	margin: 5px;
+
+}
