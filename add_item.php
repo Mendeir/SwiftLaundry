@@ -16,7 +16,7 @@
                 </div>
 
             <div class="content-items">
-                <form action="db/insert_items_script.php" class="add-item-form" method="POST">
+                <form action="db/insert_items_script.php" class="add-item-form" method="POST" enctype="multipart/form-data">
                     <label for="item-name"> Item Name: </label>
                     <input type="text" id="item-name" name="item-name" required>
 
