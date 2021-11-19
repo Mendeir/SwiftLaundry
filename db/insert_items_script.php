@@ -6,9 +6,21 @@
     if(isset($_POST["submit"])) {
         $item_name = $_POST["item-name"];
         $price = $_POST["price"];
-        $image_path = $_POST["image-path"];
 
-        $query = "INSERT INTO items(item_name, price, image_path) VALUES('$item_name', '$price', '$image_path')";
+        $image = $_FILES["image-path"];
+        $image_name = $image["name"];
+        $image_tmp_name = $image["tmp_name"];
+        $image_extension = explode('.', $image_name);
+        $final_image_extension = strtolower(end($image_extension));
+
+        echo $image_name;
+
+        $new_filename = uniqid('', true).".".$final_image_extension;
+        $database_file_destination = "img/items/".$new_filename;
+        $file_destination = "../img/items/".$new_filename;
+        move_uploaded_file($image_tmp_name, $file_destination);
+
+        $query = "INSERT INTO items(item_name, price, image_path) VALUES('$item_name', '$price', '$database_file_destination')";
         $run = mysqli_query($connection, $query);
 
         if($run) {
