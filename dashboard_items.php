@@ -23,9 +23,6 @@
                     <?php 
                         include_once("db/db_SwiftLaundry_connection_script.php");
                         
-                        if ($connection->connect_error) {
-                            die("Connection failed: ".$connection->connect_error);
-                        }
                         $sql_command = "SELECT item_name, price, image_path FROM items";
                         $result = $connection->query($sql_command);
 

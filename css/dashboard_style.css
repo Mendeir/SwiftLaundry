@@ -139,7 +139,7 @@ section .content-items {
     clear:both;
 }
 
-.content-items .card {
+.card {
     background-color: #ADE8F4;
     border-radius: 10px;
     padding: 10px;
@@ -148,7 +148,7 @@ section .content-items {
 
 .item-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     grid-column-gap: 20px;
     grid-row-gap: 20px
 }
@@ -219,4 +219,22 @@ section .content-items {
     margin-top: 15%;
     text-align: center;
     color: #03045E;
+}
+
+section .receipt-items {
+    width: 45%;
+    float: left;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+section .receipt-orders {
+    width: 45%;
+    float: right;
+}
+
+#add-to-receipt {
+    
 }
