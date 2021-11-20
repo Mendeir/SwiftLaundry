@@ -75,7 +75,7 @@
             </div>
 
             <div class="receipt-orders">
-                <form action="#" method="POST">
+                <form action="db/insert_receipts_script.php" method="POST">
                     <?php 
 
                             $total_price = 0;
@@ -97,7 +97,7 @@
                                     $receipts_table .= "
                                         <tr>
                                             <td>".$value['item_name']."</td>
-                                            <td>".$value['price']."</td>
+                                            <td>Php ".$value['price']."</td>
                                             <td>".$value['quantity']."</td>
                                             <td>"."Php ".number_format($value['price'] * $value['quantity'], 2)."</td>
                                             <td></td>
@@ -112,7 +112,7 @@
                                     <tr>
                                         <td colspan=2></td>
                                         <td><b>Total Price</b></td>
-                                        <td>".number_format($total_price, 2)."</td>
+                                        <td>Php ".number_format($total_price, 2)."</td>
                                         <td>
                                             <input type='submit' name='clear-all' value='Clear Receipts'>
                                         </td>
@@ -140,13 +140,3 @@
     
 </body>
 </html>
-
-<?php 
-
-if(isset($_POST["submit"])) {
-    unset($_SESSION["receipts"]);
-}
-
-
-
-?>      

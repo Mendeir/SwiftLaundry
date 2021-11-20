@@ -13,8 +13,6 @@
         $image_extension = explode('.', $image_name);
         $final_image_extension = strtolower(end($image_extension));
 
-        echo $image_name;
-
         $new_filename = uniqid('', true).".".$final_image_extension;
         $database_file_destination = "img/items/".$new_filename;
         $file_destination = "../img/items/".$new_filename;
@@ -29,5 +27,7 @@
             header("Location:../input_submitted_failed.php");
         }
     }
-
+    #INSERT INTO orders(items_id, receipts_id, quantity) VALUES(1, 1, 5)
+    
 ?>
+
