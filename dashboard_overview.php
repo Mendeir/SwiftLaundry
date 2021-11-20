@@ -11,71 +11,69 @@
 
 <body>
 	<?php include_once("inc/header.inc")  ?>
+	
+	<section>
+        <div class="content">
+            <h2>Items</h2>
+            <div class="content-items">
+                <div class="item-container">
 
-	<section class="row1">
-		<h2>Items</h2>
-		<p>Recents</p>
-		<div class="container">
-			<div class="col">
-				<p>items</p>
-			</div>
-			<div class="col">
-				<p>items</p>
-			</div>
-			<div class="col">
-				<p>items</p>
-			</div>
-			<div class="col">
-				<p>items</p>
-			</div>
-			<div class="col">
-				<p>items</p>
-			</div>
-		</div>
+                    <?php 
+                        include_once("db/db_SwiftLaundry_connection_script.php");
+                        
+                        $sql_command = "SELECT item_name, price, image_path FROM items";
+                        $result = $connection->query($sql_command);
 
-	</section>
+                        if ($result-> num_rows > 0) {
+                            while($row = $result-> fetch_assoc()) {
+                                echo '<div class="card">';
+                                    echo '<div class="product-name">'.$row["item_name"]."</div>";
+                                    echo ' <div class="image"><img src="'.$row["image_path"].'" alt="Item"></div>';
+                                    echo '<div class="price">'.$row["price"]."</div>";
+                                echo "</div>";
+                            }
+                        }
+                    ?>
+                    
+                </div>
+            </div>
 
-	<section class="row1">
-		<h2>Receipts</h2>
-		<p>Recents</p>
-		<div class="container">
-			<div class="col">
-				<p>Receipt</p>
-			</div>
-			<div class="col">
-				<p>Receipt</p>
-			</div>
-			<div class="col">
-				<p>Receipt</p>
-			</div>
-			<div class="col">
-				<p>Receipt</p>
-			</div>
-			<div class="col">
-				<p>Receipt</p>
-			</div>
-		</div>
-	</section>
+        </div>
+    </section>
 
 	<section class="row1">
 		<h2>Tickets</h2>
-		<p>Recents</p>
-		<div class="container">
-			<div class="col">
-				<p>Ticket</p>
-			</div>
-			<div class="col">
-				<p>Ticket</p>
-			</div>
-			<div class="col">
-				<p>Ticket</p>
-			</div>
-			<div class="col">
-				<p>Ticket</p>
-			</div>
-			<div class="col">
-				<p>Ticket</p>
-			</div>
+		<div class="container-bg">
+
+			<p>Recents</p>	
+				<?php
+					$ticket_file = fopen("tickets.txt","r");
+					$ticket_number = 1;
+					if ($ticket_file) {
+	    				while (($line = fgets($ticket_file)) !== false) {
+	        				$line_arr = explode (", ", $line);
+	        				
+	        				echo '<div class="col">';
+	        					$_SESSION['temp'] = $ticket_number;
+								echo '<p><b>'.'Ticket #'.$ticket_number.'</b></p>'; 
+						  		echo '<p>Receipt ID: '.$line_arr[0].'</p>';
+						  		echo '<p>Quantity: '.$line_arr[1].'</p>';
+						  		echo '<p>Date: '.$line_arr[2].'</p>';
+						  		echo '<p>Total: '.$line_arr[3].'</p>';
+
+							echo '</div>';
+
+							$ticket_number += 1;
+	    				}
+
+	    				fclose($ticket_file);
+					} else {
+	    				// error opening the file.
+					}
+
+				
+				?>
+				
 		</div>
 	</section>
 
@@ -83,15 +81,5 @@
 </html>
 
 
-<?php
-	/*
-	include_once("db/db_SwiftLaundry_connection_script.php");
-	if ($connection->connect_error) {
-		die("Connection failed: ".$connection->connect_error);
-	}
 
-	$sql_command = "SELECT item_name, price, image_path FROM items";
-	$result = $connection->query($sql_command);
-	*/
-?>
  

@@ -1,6 +1,6 @@
 <?php  
                 	
-    $item = $_POST['item-name'];
+    $item = $_POST['receipt-id'];
     $quantity = $_POST['quantity'];
     $date = $_POST['date'];
     $total = $_POST['total'];

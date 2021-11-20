@@ -1,21 +1,8 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
-
-	<style>
-		.paid{
-			float: left;
-            padding: 10px;
-            background: #0077B6;
-            text-decoration: none;
-            margin: 10px;
-            border-radius: 2px;
-            font-size: 15px;
-            font-weight: 600;
-            color: #fff;
-		}
-	</style>
 
 	<meta charset="utf-8">
 	<title>Tickets</title>
@@ -31,7 +18,10 @@
 				<h2>Tickets</h2>
 			</div>
 			<div class="add">
-				<a href="add_ticket.php" class="add-ticket">Add Item +</a>
+				<a href="add_ticket.php" class="paid">Add Ticket</a>
+			</div>
+			<div class="add">
+				<a href="remove_ticket.php" class="paid">Pay Ticket</a>
 			</div>
 		</div>
 
@@ -41,24 +31,24 @@
 			<div class="container-pending">
 				<?php
 				$ticket_file = fopen("tickets.txt","r");
-				$ticket_number = 0;
+				$ticket_number = 1;
 				if ($ticket_file) {
     				while (($line = fgets($ticket_file)) !== false) {
         				$line_arr = explode (", ", $line);
         				
         				echo '<div class="col">';
-        					
+        					$_SESSION['temp'] = $ticket_number;
 							echo '<p><b>'.'Ticket #'.$ticket_number.'</b></p>'; 
-					  		echo '<p>'.$line_arr[0].'</p>';
-					  		echo '<p>'.$line_arr[1].'</p>';
-					  		echo '<p>'.$line_arr[2].'</p>';
-					  		echo '<p>'.$line_arr[3].'</p>';
-					  		echo '<a href="remove_ticket.php" class="paid">Paid</a>';
+					  		echo '<p>Receipt ID: '.$line_arr[0].'</p>';
+					  		echo '<p>Quantity: '.$line_arr[1].'</p>';
+					  		echo '<p>Date: '.$line_arr[2].'</p>';
+					  		echo '<p>Total: '.$line_arr[3].'</p>';
 
 						echo '</div>';
 
 						$ticket_number += 1;
     				}
+
     				fclose($ticket_file);
 				} else {
     				// error opening the file.

@@ -11,15 +11,15 @@
 }
 
 .header{
-	border-style: solid;
-  	border-color: black;
   	height: 100px;
 }
 
 .container{
-	border-style: solid;
-  	border-color: coral;
   	height: 450px;
+    margin: 10% auto;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: #fff;
 }
 .container-pending{
 	width: 1000px;
@@ -27,10 +27,22 @@
 	margin: 0 auto;
 }
 .col{
-	width: 150px;
+	width: 250px;
 	height: 300px;
 	border: 1px solid black;
 	float: left;
 	padding: 5px;
 	margin: 5px;
+	background: #ADE8F4;
+}
+.paid{
+	float: left;
+    padding: 10px;
+    background: #0077B6;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
 }
