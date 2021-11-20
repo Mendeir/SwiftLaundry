@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include_once("../db/db_SwiftLaundry_connection_script.php");
+include_once("db/db_SwiftLaundry_connection_script.php");
 
 if(isset($_POST['submit'])){
 

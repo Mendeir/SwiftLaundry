@@ -17,4 +17,11 @@ $sql_command = "CREATE TABLE items
     }
 
     $connection->close();
+    /*
+    SELECT receipt_date, item_name, price, quantity 
+    FROM orders as o 
+    INNER JOIN items as i ON o.items_id = i.item_id 
+    INNER JOIN receipts as r ON o.receipts_id = r.receipt_id
+    WHERE receipts_id = 1;
+    */
 ?>
