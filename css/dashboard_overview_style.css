@@ -1,19 +1,37 @@
-.row1{
-	height: 250px;
-	background-color: powderblue;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Verdana", sans-serif;
+    text-decoration-color: ;
 }
 
-.container{
+.row1{
+	height: 700px;
+	
+}
+
+.container-bg{
 	width: 1000px;
-	height: 150px;
-	margin: 0 auto;
+	height: 500px;
+	margin: 10% auto;
+	overflow: hidden;
+	overflow-y: scroll;
+	background: #fff;
 }
 
 .col{
 	width: 150px;
-	height: 150px;
+	height: 200px;
 	border: 1px solid black;
 	float: left;
 	padding: 5px;
 	margin: 5px;
+	background: #ADE8F4;
+}
+
+.card {
+    background-color: #ADE8F4;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
 }
