@@ -6,7 +6,7 @@
 
     if(isset($_POST["clear-all"])) {
         unset($_SESSION["receipts"]);
-        header("Location: ../dashboard_receipts.php");
+        header("Location: ../add_receipts.php");
     }
 
     if(isset($_POST["save-receipt"])) {
