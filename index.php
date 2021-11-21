@@ -17,7 +17,7 @@
 	<center>
 		<h1> Swift Laundry</h1>
 		
-		<form action="Technical3_B_3.php" method="get">
+		<form action="session.php" method="post">
 			<h2>Log-in</h2>
 			<div class='first'>
 				<label for="username"> <b> Username:</b> </label>
@@ -26,7 +26,7 @@
 				<label for="pass"> <b>Password:</b> </label>
 				<input type="password" placeholder="Enter your password" name="pword" required>
 				<br>
-				<button type="submit"> Login </button>
+				<button type="submit" name ="submit"> Login </button>
 				<p class="register"><a href="register_form.php">Register</a></p>
 			</div>
 		</form>
