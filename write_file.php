@@ -36,7 +36,7 @@
     <?php include_once("inc/header.inc") ?>
     <section>
         <center>
-            <h1>Successfully Added</h1>
+            <h1 style="color: #0077B6;" >Successfully Added</h1>
             <a href="dashboard_tickets.php" class="done">Done</a>
         </center>
     </section>

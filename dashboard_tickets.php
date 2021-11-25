@@ -5,7 +5,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>Tickets</title>
+	<title >Tickets</title>
 
 	<?php include_once("inc/head.inc") ?>
 	<link rel="stylesheet" href="css/dashboard_tickets_style.css" />
@@ -15,7 +15,7 @@
 	<section>
 		<div class="header">
 			<div class="head">
-				<h2>Tickets</h2>
+				<h2 style="color: #0077B6;" >Tickets</h2>
 			</div>
 			<div class="add">
 				<a href="add_ticket.php" class="paid">Add Ticket</a>
@@ -26,7 +26,7 @@
 		</div>
 
 		<div class="container">
-			<h3>Pending</h3>
+			<h3 style="color: #0077B6;">Pending</h3>
 			
 			<div class="container-pending">
 				<?php
@@ -38,11 +38,11 @@
         				
         				echo '<div class="col">';
         					$_SESSION['temp'] = $ticket_number;
-							echo '<p><b>'.'Ticket #'.$ticket_number.'</b></p>'; 
-					  		echo '<p>Receipt ID: '.$line_arr[0].'</p>';
-					  		echo '<p>Quantity: '.$line_arr[1].'</p>';
-					  		echo '<p>Date: '.$line_arr[2].'</p>';
-					  		echo '<p>Total: '.$line_arr[3].'</p>';
+							echo '<p style="color: #0077B6;" ><b>'.'Ticket #'.$ticket_number.'</b></p>'; 
+					  		echo '<p style="color: #0077B6;" >Receipt ID: '.$line_arr[0].'</p>';
+					  		echo '<p style="color: #0077B6;" >Quantity: '.$line_arr[1].'</p>';
+					  		echo '<p style="color: #0077B6;" >Date: '.$line_arr[2].'</p>';
+					  		echo '<p style="color: #0077B6;" >Total:Php '.$line_arr[3].'</p>';
 
 						echo '</div>';
 

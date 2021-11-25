@@ -31,11 +31,10 @@
 	<section>
 		<center>
 
-		<h1>Successfully removed from pending</h1>
+		<h1 style="color: #0077B6;" >Successfully removed from pending</h1>
 		<a href="dashboard_tickets.php" class="paid">Done</a>
 		<?php 
 			
-			echo $temp;
 			$ticket_file = fopen("tickets.txt","r+");
 			$new_ticket = fopen("new_ticket.txt","w");
 			if ($ticket_file) {
