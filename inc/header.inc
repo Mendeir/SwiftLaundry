@@ -4,8 +4,8 @@
     </div>
     
     <div class="logout-area">
-        <a href="#" class="logout-button">Logout</a>
-        <span>USER</span>
+        <a href="logout.php" class="logout-button">Logout</a>
+        <span><?php echo "$_SESSION[username]"; ?></span>
     </div>
 </header>
 

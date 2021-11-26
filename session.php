@@ -11,6 +11,7 @@ if(isset($_POST['submit'])){
      $result = mysqli_query($connection, $query);
         
         if(mysqli_fetch_assoc($result)) {     
+            $_SESSION['loggedIn'] = true;
             $_SESSION['username'] = $username;
             header("Location:dashboard_overview.php"); 
         } 

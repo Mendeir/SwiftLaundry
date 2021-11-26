@@ -2,6 +2,9 @@
     session_start();
     include_once("db/db_SwiftLaundry_connection_script.php"); 
     
+	if(!$_SESSION["loggedIn"]) {
+		header('Location:index.php');  
+	}
     if (isset($_POST["add-to-receipt"])) {
         if(isset($_SESSION["receipts"])) {
             $receipts_array_id = array_column($_SESSION["receipts"], "item_id");

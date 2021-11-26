@@ -1,3 +1,10 @@
+<?php 
+	session_start();
+	if(!$_SESSION["loggedIn"]) {
+		header('Location:index.php');  
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,14 +37,14 @@
         <span class = "details">
             Password 
         </span> 
-        <input type = "text" placeholder ="Enter your password" id = "password" name = "password" required>
+        <input type = "password" placeholder ="Enter your password" id = "password" name = "password" required>
         </div>
 
          <div class = "input-box">
         <span class = "details">
             Confirm Password 
         </span> 
-        <input type = "text" placeholder ="Re-enter Your password" id = "repass" name = "repass" required>
+        <input type = "password" placeholder ="Re-enter Your password" id = "repass" name = "repass" required>
         </div>
     </div>
     <div class="button">
