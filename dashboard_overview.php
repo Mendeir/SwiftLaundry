@@ -36,7 +36,7 @@
                                 echo '<div class="card">';
                                     echo '<div class="product-name">'.$row["item_name"]."</div>";
                                     echo ' <div class="image"><img src="'.$row["image_path"].'" alt="Item"></div>';
-                                    echo '<div class="price">'.$row["price"]."</div>";
+                                    echo '<div class="price"><span>₱</span>'.$row["price"]."</div>";
                                 echo "</div>";
                             }
                         }

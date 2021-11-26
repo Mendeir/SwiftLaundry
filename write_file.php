@@ -1,5 +1,5 @@
 <?php  
-                	
+    session_start();
     $item = $_POST['receipt-id'];
     $quantity = $_POST['quantity'];
     $date = $_POST['date'];
