@@ -26,7 +26,7 @@
 	<section>
 		
 	
-		<h1>Pay Ticket</h1>
+		<h1 style="color: #0077B6;" >Pay Ticket</h1>
 		
 		<form action="rewrite_file.php" class="add-item-form" method="POST">
 

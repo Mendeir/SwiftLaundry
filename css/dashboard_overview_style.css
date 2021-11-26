@@ -22,7 +22,7 @@ body {
 .col{
 	width: 150px;
 	height: 200px;
-	border: 1px solid black;
+	border: 1px solid #03045E;
 	float: left;
 	padding: 5px;
 	margin: 5px;
