@@ -44,7 +44,7 @@
         				echo '<div class="col">';
         					$_SESSION['temp'] = $ticket_number;
 							echo '<p style="color: #0077B6;" ><b>'.'Ticket #'.$ticket_number.'</b></p>'; 
-					  		echo '<p style="color: #0077B6;" >Receipt ID: '.$line_arr[0].'</p>';
+					  		echo '<p style="color: #0077B6;" >Receipt No: '.$line_arr[0].'</p>';
 					  		echo '<p style="color: #0077B6;" >Quantity: '.$line_arr[1].'</p>';
 					  		echo '<p style="color: #0077B6;" >Date: '.$line_arr[2].'</p>';
 					  		echo '<p style="color: #0077B6;" >Total:Php '.$line_arr[3].'</p>';
